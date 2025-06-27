@@ -1,0 +1,52 @@
+# Root-level ignores (e.g. logs, envs, OS files)
+node_modules/
+.env
+.env.local
+.env.*.local
+.DS_Store
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Ignore .next and build folders (client)
+client/.next/
+client/out/
+client/.turbo/
+client/.vercel/
+client/build/
+client/.env
+client/.env.local
+client/.env.*.local
+
+# Ignore node_modules and dist from server
+server/node_modules/
+server/dist/
+server/build/
+server/.env
+server/.env.local
+server/.env.*.local
+
+# Ignore coverage files
+coverage/
+client/coverage/
+server/coverage/
+
+# Optional: Ignore IDE/editor settings
+.vscode/
+.idea/
+*.swp
+
+# Optional: Ignore testing folders or snapshots
+__tests__/
+__mocks__/
+*.test.js
+*.spec.js
+*.test.ts
+*.spec.ts
+*.snap
+
+# Optional: Lint cache
+client/.eslintcache
+server/.eslintcache
