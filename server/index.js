@@ -13,7 +13,7 @@ const io = new Server(httpServer, {
 
 let scores =[]
 io.on("connection", (socket) => {
-  console.log("Hello Sir socket connected")
+  console.log("Hello Sir socket connected", socket.id)
   
   socket.on("score",(score)=>{
     scores.push(score);
